@@ -49,7 +49,7 @@ public class LoginStepDef {
 	public void user_should_land_on_Dashboard_page() throws Throwable {
 		String expectedTitle = "Dashboard- iBilling";
 		String acturelTitle = loginPage.getPageTitle();
-		Assert.(expectedTitle,acturelTitle);
+		Assert.assertEquals(expectedTitle,acturelTitle);
 	}
 
 	@After
